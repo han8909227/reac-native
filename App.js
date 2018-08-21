@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import PlaceInput from './src/components/PlaceInput/PlaceInput';
 import PlaceList from './src/components/PlaceList/PlaceList';
+import placeImage from './src/assets/place.jpg';
 
 
 export default class App extends React.Component {
@@ -15,7 +16,11 @@ export default class App extends React.Component {
 
     this.setState(prevState => {
       return{
-        places: prevState.places.concat({key: Math.random(), value: placeName})
+        places: prevState.places.concat({
+          key: Math.random(), 
+          name: placeName,
+          image: placeImage
+        })
       }
     });
   };
