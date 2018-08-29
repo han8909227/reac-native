@@ -1,5 +1,4 @@
-import {ADD_PLACE, DELETE_PLACE, SELECT_PLACE, DESELECT_PLACE} from './actionTypes';
-
+import { ADD_PLACE, DELETE_PLACE, SELECT_PLACE, DESELECT_PLACE } from './actionTypes';
 
 export const addPlace = (placeName) => {
     return {
@@ -14,17 +13,15 @@ export const deletePlace = () => {
     };
 };
 
-export const selectPlace = () => {
+export const selectPlace = (key) => {
     return {
         type: SELECT_PLACE,
-        placekey: key
+        placeKey: key
     };
 };
 
 export const deselectPlace = () => {
-    return { 
-        type: DELETE_PLACE
-    }
-}
-
-// this is an action creator file
+    return {
+        type: DESELECT_PLACE
+    };
+};
