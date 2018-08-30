@@ -19,7 +19,6 @@ const reducer = (state = initialState, action) => {
                         uri: "https://www.colorado.com/sites/default/files/CTO_18_VoiceOfColorado_DSC04337_rgb.jpg"
                     }
                 }) // in redux always return a new state => immutability
-
             };
         
         case DELETE_PLACE: 
